@@ -1,0 +1,74 @@
+[
+  {
+    "PhoneNumber": "232521",
+    "Email": "savasavic@gmail.com",
+    "Address": "Norveska 4, Sabac",
+    "InsuranceNumber": "0504023",
+    "MedicalRecord": {
+      "Height": 65.0,
+      "Weight": 190.0,
+      "PreviousIllnesses": [
+      ],
+      "Allergies": [
+      ],
+      "Examinations": {
+      }
+    },
+    "BirthDate": "2001-10-20T00:00:00",
+    "Name": "Sinisa",
+    "Surname": "Savic",
+    "Credentials": {
+      "Username": "pacijent2",
+      "Password": "pacijent"
+    }
+  },
+  {
+    "PhoneNumber": null,
+    "Email": null,
+    "Address": null,
+    "InsuranceNumber": "123456789",
+    "MedicalRecord": {
+      "Height": 0.0,
+      "Weight": 0.0,
+      "PreviousIllnesses": [
+      ],
+      "Allergies": [
+        "Alergija 1",
+        "Alergija 2"
+      ],
+      "Examinations": {
+      }
+    },
+    "BirthDate": "0001-01-01T00:00:00",
+    "Name": "Pera",
+    "Surname": "Peric",
+    "Credentials": {
+      "Username": "pacijent1",
+      "Password": "pacijent"
+    }
+  },
+  {
+    "PhoneNumber": "3243224",
+    "Email": "jovko@gmail.com",
+    "Address": "Jovana 3,Jovanovo",
+    "InsuranceNumber": "sdsds",
+    "MedicalRecord": {
+      "Height": 80.0,
+      "Weight": 187.0,
+      "PreviousIllnesses": [
+      ],
+      "Allergies": [
+        "Polen"
+      ],
+      "Examinations": {
+      }
+    },
+    "BirthDate": "2001-10-20T00:00:00",
+    "Name": "Jovan",
+    "Surname": "Jovanovic",
+    "Credentials": {
+      "Username": "jovko@gmail.com",
+      "Password": "sdsd"
+    }
+  }
+]

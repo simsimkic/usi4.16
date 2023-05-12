@@ -1,0 +1,33 @@
+﻿<Window x:Class="ZdravoCorp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ZdravoCorp"
+        Title="Log In" Height="400" Width="600"
+        ResizeMode="NoResize">
+
+    <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+        <Label Content="LOG IN" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,-30,0,20"/>
+
+        <TextBox  Padding="4" FontSize="22" Width="300" x:Name="UsernameBox" Height="40" Margin="0,0,0,20"/>
+        <TextBlock Padding="4" FontSize="22" IsHitTestVisible="False" Text="Korisničko ime" Foreground="DarkGray" Width="276" Margin="-15,-60,0,0">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=UsernameBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <PasswordBox Padding="4" FontSize="22" Width="300" x:Name="PasswordBox" Height="40" Margin="0,0,0,20" PasswordChanged="PasswordBoxOnChange"/>
+        <TextBlock Padding="4" FontSize="22" IsHitTestVisible="False" x:Name="PasswordOverlay" Text="Šifra" Foreground="DarkGray" Width="276" Margin="-15,-60,0,0">
+        </TextBlock>
+
+        <Button x:Name="LogInButton" Content="Ulogujte se" Padding="4" IsDefault="True" FontSize="22" Width="300" Height="50" Click="LogIn"/>
+
+    </WrapPanel>
+</Window>

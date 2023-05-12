@@ -1,0 +1,45 @@
+[{
+  "Id": 1,
+  "Name": "Operaciona sala 1",
+  "Type": 0
+},{
+  "Id": 2,
+  "Name": "Operaciona sala 2",
+  "Type": 0
+},{
+  "Id": 3,
+  "Name": "Sala za preglede 1",
+  "Type": 1
+},{
+  "Id": 4,
+  "Name": "Sala za preglede 2",
+  "Type": 1
+},{
+  "Id": 5,
+  "Name": "Sala za preglede 3",
+  "Type": 1
+},{
+  "Id": 6,
+  "Name": "Sala za preglede 4",
+  "Type": 1
+},{
+  "Id": 7,
+  "Name": "Soba za smestaj bolesnika 1",
+  "Type": 2
+},{
+  "Id": 8,
+  "Name": "Soba za smestaj bolesnika 2",
+  "Type": 2
+},{
+  "Id": 9,
+  "Name": "Soba za smestaj bolesnika 3",
+  "Type": 2
+},{
+  "Id": 10,
+  "Name": "Soba za smestaj bolesnika 4",
+  "Type": 2
+},{
+  "Id": 11,
+  "Name": "Magacin",
+  "Type": 4
+}]

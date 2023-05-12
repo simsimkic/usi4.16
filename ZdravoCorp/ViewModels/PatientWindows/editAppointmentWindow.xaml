@@ -1,0 +1,16 @@
+﻿<Window x:Class="ZdravoCorp.ViewModels.PatientWindows.editAppointmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.ViewModels.PatientWindows"
+        mc:Ignorable="d"
+        Title="editAppointmentWindow" Height="500" Width="800">
+    <Grid>
+        <Button Name="appointmentButton" Height="50" Width="150" Margin="125,360,125,24" Click="appointmentButton_Click">Izmeni</Button>
+        <TextBox Name="appointmentBeginTB" Height="50" Width="200" TextAlignment="Center" Margin="100,217,100,167"/>
+        <TextBox Name="appointmentDoctorTB" Height="50" Width="200" TextAlignment="Center" Margin="100,97,100,287"/>
+        <Label Height="50" Width="200" Margin="100,47,100,337" HorizontalContentAlignment="Center">Doktor:</Label>
+        <Label Height="50" Width="200"  HorizontalContentAlignment="Center" Margin="100,167,100,217">Vreme pocetka termina:</Label>
+    </Grid>
+</Window>

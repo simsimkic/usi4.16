@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Marko",
+  "Surname": "Markovic",
+  "Id": "e4214",
+  "PhoneNumber": null,
+  "Email": null,
+  "Address": null,
+  "medicalRecord": {
+    "Height": 78.0,
+    "Weight": 182.0,
+    "PreviousIllnesses": [],
+    "Allergies": []
+  }

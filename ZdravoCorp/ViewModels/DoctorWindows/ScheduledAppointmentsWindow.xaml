@@ -1,0 +1,85 @@
+﻿<Window x:Class="ZdravoCorp.ViewModels.DoctorWindows.ScheduledAppointmentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.ViewModels"
+        mc:Ignorable="d"
+        Title="Prikaz zakazanih pregleda i operacija" Height="350" Width="765">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ListView Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" x:Name="AppointmentsListView" SelectionMode="Single" Width="450" FontSize="16" Padding="4" Margin="10,10,0,10">
+            <ListView.View>
+                <GridView>
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style TargetType="{x:Type GridViewColumnHeader}">
+                            <Setter Property="IsHitTestVisible" Value="False"/>
+                            <Setter Property="MinWidth" Value="70"/>
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+                    <GridViewColumn Header="Tip">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Setter Property="Text" Value="Pregled" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsOperation}" Value="True">
+                                                    <Setter Property="Text" Value="Operacija" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Datum">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding TimeSlot.StartTime, StringFormat=dd-MM-yyyy HH:mm}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Trajanje">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding TimeSlot.Duration, StringFormat=hh\\:mm}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Prezime" DisplayMemberBinding="{Binding Patient.Surname}"/>
+                    <GridViewColumn Header="Ime" DisplayMemberBinding="{Binding Patient.Name}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label Grid.Column="1" Content="Prikaz svih pregleda i operacija za:" FontSize="18" VerticalContentAlignment="Center" Margin="6,0,0,0"/>
+
+        <RadioButton Name="NextDaysRadioButton" Grid.Column="1" Grid.Row="1" Content="naredna 3 dana" FontSize="18" VerticalContentAlignment="Center" Margin="10,0,0,0" Checked="ShowForNextDays"/>
+
+        <RadioButton Name="SpecificDayRadioButton" Grid.Column="1" Grid.Row="2" Content="određeni dan" FontSize="18" VerticalContentAlignment="Center" Margin="10,0,0,0" Checked="ShowForSpecificDay"/>
+        <local:CustomDatePicker Grid.Column="1" Grid.Row="2" WatermarkText="Izaberite dan" FontSize="16" Width="140" Height="35" VerticalContentAlignment="Center" x:Name="SpecificDay" HorizontalAlignment="Right" Margin="0,0,10,0" SelectedDateChanged="DateChanged"/>
+        
+        <Button Grid.Row="3" Grid.Column="1" FontSize="28" Margin="10" IsDefault="True" Click="ShowPatientsRecord">
+            <TextBlock TextAlignment="Center">Pacijentov<LineBreak/>zdravstveni karton</TextBlock>
+        </Button>
+        
+    </Grid>
+
+</Window>

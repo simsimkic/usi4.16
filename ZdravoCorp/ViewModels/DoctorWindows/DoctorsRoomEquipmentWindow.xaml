@@ -1,0 +1,59 @@
+﻿<Window x:Class="ZdravoCorp.ViewModels.DoctorWindows.DoctorsRoomEquipmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.ViewModels"
+        mc:Ignorable="d"
+        Title="Stanje dinamičke opreme" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Margin="5,10,10,5" Content="Pre pregleda:" Grid.Row="0" Grid.Column="0" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <ListView Width="210" Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" x:Name="EquipmentListView" FontSize="18" Padding="4" Margin="10,5,5,10" SelectionChanged="SelectionChanged" Height="Auto">
+            <ListView.View>
+                <GridView>
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style TargetType="{x:Type GridViewColumnHeader}">
+                            <Setter Property="MinWidth" Value="90"/>
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+                    <GridViewColumn Header="Naziv" DisplayMemberBinding="{Binding Equipment.Name}"/>
+                    <GridViewColumn Header="Količina" DisplayMemberBinding="{Binding Quantity}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label Margin="5,10,10,5" Content="Izaberite opremu koju ste potrošili:" Grid.Column="1" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <ComboBox Grid.Column="1" Grid.Row="1" x:Name="EquipmentComboBox" Margin="5,5,10,5" Height="40" FontSize="18" VerticalContentAlignment="Center" Grid.ColumnSpan="2">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <Label Margin="5,5,10,5" Content="Koliko ste potrošili:" Grid.Row="2" Grid.Column="1" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBox VerticalContentAlignment="Center" x:Name="EquipmentUsedTextBox" Height="40" Margin="5,5,10,5" Grid.Row="3" Grid.Column="1" FontSize="18" Padding="4"/>
+
+        <Button Grid.Row="4" Height="40" Width="150" Content="Unesi potrošeno" HorizontalAlignment="Right" Margin="0,5,146,10" FontSize="18" Padding="8" Click="MoreUsedEquipment" Grid.Column="1"/>
+
+        <Button Grid.Row="4" Height="40" Width="80" HorizontalAlignment="Right" Content="Gotovo" FontSize="18" FontWeight="DemiBold" Padding="8" Margin="10,5,10,10" IsDefault="True" Click="FormSubmitted" Grid.ColumnSpan="2"/>
+
+    </Grid>
+
+</Window>

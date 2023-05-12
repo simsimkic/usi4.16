@@ -1,0 +1,22 @@
+[
+  {
+    "FromRoom": {
+      "Id": 11,
+      "Name": "Magacin",
+      "Type": 4
+    },
+    "ToRoom": {
+      "Id": 4,
+      "Name": "Sala za preglede 2",
+      "Type": 1
+    },
+    "Quantity": 2,
+    "Equipment": {
+      "Name": "Krevet",
+      "Type": 2,
+      "TypeTranslation": "Sobni namestaj"
+    },
+    "MoveDate": "2023-05-14T12:00:00",
+    "IsDynamic": false
+  }
+]

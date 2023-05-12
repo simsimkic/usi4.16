@@ -1,0 +1,57 @@
+﻿<Window x:Class="ZdravoCorp.ViewModels.PatientWindows.ConditionalcheduleAppointmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:local="clr-namespace:ZdravoCorp.ViewModels"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      
+        mc:Ignorable="d"
+        Title="SmartScheduleAppointmentWindow" Height="465" Width="915">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition  Width ="0.6* "/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column ="0">
+                <Border Grid.Column="0" BorderThickness="0,0,1,0" BorderBrush="Black"/>
+                <Label Width="200" Margin="50,45,250,279" HorizontalContentAlignment="Center" Content="Zeljeni doktor:"/>
+                <ComboBox Name="appointmentDoctors" DisplayMemberPath="Name" Height="40" Width="200"  Margin="230,43,70,279" SelectedItem="{Binding SelectedDoctor}" ItemsSource="{Binding AvailableDoctors}"/>
+                <Label Width="200" Margin="30,117,270,207" HorizontalContentAlignment="Center" Content="Do dana:"/>
+                <local:CustomDatePicker WatermarkText="Izaberite datum" Canvas.Top="219" FontSize="20" Canvas.Left="10" VerticalContentAlignment="Center" Padding="4" x:Name="AppointmentDate" SelectedDate="{Binding SelectedDate}" Margin="230,115,70,207"/>
+                <Label Width="200" Margin="218,202,154,127" FontSize="13" HorizontalContentAlignment="Center" Content="Vremenski opseg:"/>
+                <TextBox Name="LowerBoundTime" TextAlignment="Center" Margin="130,247,270,76" Text="{Binding RawLowerBoundTime}"/>
+                <TextBox Name="UpperBoundTime" TextAlignment="Center" Margin="330,247,54,76" Text="{Binding RawUpperBoundTime}"/>
+                <Label Margin="48,255,386,69" HorizontalContentAlignment="Center" Content="Od:"/>
+                <Label Margin="249,255,185,69" HorizontalContentAlignment="Center" Content="Do:"/>
+                <Label Margin="0,314,434,10" HorizontalContentAlignment="Center" Content="Prioritet:"/>
+                <ComboBox x:Name="priorityComboBox"  ItemsSource="{Binding PriorityOptions}" SelectedItem="{Binding SelectedPriority}" Margin="102,311,268,11">
+                </ComboBox>
+                <Button Margin="336,312,60,8" Content="Pretrazi" Click="ScheduleOptimalAppointment"/>
+            </Grid>
+            <Grid Grid.Column ="1">
+                <ListView Name="appointmentsListView" Margin ="20,60,20,80" ItemsSource ="{Binding FoundAppointments}" SelectedItem="{Binding SelectedAppointment}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Vreme pocetka" Width="100" DisplayMemberBinding="{Binding TimeSlot.StartTime}" />
+                            <GridViewColumn Header="Trajanje" Width ="100" DisplayMemberBinding="{Binding TimeSlot.Duration}"/>
+                            <GridViewColumn Header="Doktor" Width="100" DisplayMemberBinding="{Binding Doctor.Name}" />
+                            
+                        </GridView>
+                    </ListView.View>
+
+                </ListView>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row ="1">
+            <Border Grid.Column="0" BorderThickness="1,1,1,1" BorderBrush="Black"/>
+            <Button Margin="580,13,35,10" Content="Zakazi" Click="AppointmentConfirmation"/>
+            <Button Margin="35,12,580,11" Content="Otkazi" Click="returnButton"/>
+
+        </Grid>
+    </Grid>
+</Window>

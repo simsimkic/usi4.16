@@ -1,0 +1,30 @@
+﻿<Window x:Class="ZdravoCorp.ViewModels.NurseWindows.UrgentExaminationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Hitan termin" Height="445" Width="667" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-6">
+        <ComboBox x:Name="SpecializationComboBox" Text="Izaberite oblast doktora" Margin="273,65,107,319" />
+        <Label Content="Izaberite oblast doktora" HorizontalAlignment="Left" Margin="106,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hitan termin" Foreground="#34aeeb" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.236,0.989"/>
+        <Button Content="Zakazi pregled" HorizontalAlignment="Center" Margin="0,371,0,0" VerticalAlignment="Top" Height="31" Width="100" Click="ScheduleUrgentAppointment_Click"/>
+        <RadioButton Checked="RadioButton_Checked" x:Name="examinationRB" GroupName="AppointmentType" Content="Pregled" HorizontalAlignment="Left" Margin="273,141,0,0" VerticalAlignment="Top"/>
+        <RadioButton Checked="RadioButton_Checked" x:Name="operationRB" GroupName="AppointmentType" Content="Operacija" HorizontalAlignment="Left" Margin="416,141,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tip termina" HorizontalAlignment="Left" Margin="139,135,0,0" VerticalAlignment="Top"/>
+        <TextBox PreviewTextInput="NumberValidationTextBox" x:Name="durationTextBox" HorizontalAlignment="Center" Margin="0,181,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False"/>
+        <Label Content="Trajanje (min)" HorizontalAlignment="Left" Margin="139,179,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="CurrentAppointmentsTable" Margin="0,218,0,84" AutoGenerateColumns="False" IsReadOnly="True" IsEnabled="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="Ime doktora" Width="*"  Binding="{Binding Doctor.Name}"></DataGridTextColumn>
+                <DataGridTextColumn  Header="Prezime doktora" Width="*"  Binding="{Binding Doctor.Surname}"></DataGridTextColumn>
+                <DataGridTextColumn  Header="Ime pacijenta" Width="*"  Binding="{Binding Patient.Name}"></DataGridTextColumn>
+                <DataGridTextColumn  Header="Prezime pacijenta" Width="*"  Binding="{Binding Patient.Surname}"></DataGridTextColumn>
+                <DataGridTextColumn  Header="Vreme" Width="*"  Binding="{Binding TimeSlot.StartTime}"></DataGridTextColumn>
+                <DataGridTextColumn  Header="Trajanje" Width="*"  Binding="{Binding TimeSlot.Duration}"></DataGridTextColumn>
+                <DataGridTextColumn  Header="Operacija" Width="*"  Binding="{Binding IsOperation}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

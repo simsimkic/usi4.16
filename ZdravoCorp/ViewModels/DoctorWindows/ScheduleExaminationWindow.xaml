@@ -1,0 +1,22 @@
+﻿<Window x:Class="ZdravoCorp.ViewModels.DoctorWindows.ScheduleExaminationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.ViewModels"
+        mc:Ignorable="d"
+        Title="Zakaži pregled za pacijenta" Height="333" Width="569" ResizeMode="NoResize">
+
+    <Canvas>
+
+        <ListView Name="PatientsListView" SelectionMode="Single" Width="535" Height="185" Canvas.Left="10" Canvas.Top="9" HorizontalAlignment="Left" VerticalAlignment="Center">
+        </ListView>
+
+        <local:CustomDatePicker WatermarkText="Izaberite datum" Canvas.Top="199" FontSize="20" Width="180" Height="40" Canvas.Left="10" VerticalContentAlignment="Center" Padding="4" x:Name="ExaminationDate"/>
+        <Button FontSize="18" Content="Zakaži pregled za izabranog pacijenta" Canvas.Left="195" Canvas.Top="199" Width="350" Height="85" HorizontalAlignment="Center" VerticalAlignment="Top" Click="ScheduleExamination"></Button>
+        <TextBox Canvas.Left="10" Text="hh:mm" Canvas.Top="244" Height="40" Width="180" FontSize="20" VerticalContentAlignment="Center" Padding="4" x:Name="ExaminationTime"/>
+
+    </Canvas>
+
+
+</Window>

@@ -1,0 +1,733 @@
+[{
+  "Equipment": {
+    "Name": "Stolica",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 3,
+    "Name": "Sala za preglede 1",
+    "Type": 1
+  },
+  "Quantity": 7
+},{
+  "Equipment": {
+    "Name": "Sto",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 3,
+    "Name": "Sala za preglede 1",
+    "Type": 1
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Krevet",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 7,
+    "Name": "Soba za smestaj bolesnika 1",
+    "Type": 2
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Ormar",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 5,
+    "Name": "Sala za preglede 3",
+    "Type": 1
+  },
+  "Quantity": 1
+},{
+  "Equipment": {
+    "Name": "Stolica",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 8,
+    "Name": "Soba za smestaj bolesnika 2",
+    "Type": 2
+  },
+  "Quantity": 5
+},{
+  "Equipment": {
+    "Name": "Sto",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 9,
+    "Name": "Soba za smestaj bolesnika 3",
+    "Type": 2
+  },
+  "Quantity": 8
+},{
+  "Equipment": {
+    "Name": "Krevet",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Ormar",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 2,
+    "Name": "Operaciona sala 2",
+    "Type": 0
+  },
+  "Quantity": 1
+},{
+  "Equipment": {
+    "Name": "Sto",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 2,
+    "Name": "Operaciona sala 2",
+    "Type": 0
+  },
+  "Quantity": 6
+},{
+  "Equipment": {
+    "Name": "Krevet",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 11,
+    "Name": "Skladiste",
+    "Type": 4
+  },
+  "Quantity": 13
+},{
+  "Equipment": {
+    "Name": "Ormar",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 7,
+    "Name": "Soba za smestaj bolesnika 1",
+    "Type": 2
+  },
+  "Quantity": 4
+},{
+  "Equipment": {
+    "Name": "Stolica",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 4,
+    "Name": "Sala za preglede 2",
+    "Type": 1
+  },
+  "Quantity": 4
+},{
+  "Equipment": {
+    "Name": "Sto",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 1,
+    "Name": "Operaciona sala 1",
+    "Type": 0
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Ormar",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 11,
+    "Name": "Skladiste",
+    "Type": 4
+  },
+  "Quantity": 10
+},{
+  "Equipment": {
+    "Name": "Stolica",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 6,
+    "Name": "Sala za preglede 4",
+    "Type": 1
+  },
+  "Quantity": 10
+},{
+  "Equipment": {
+    "Name": "Sto",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Ormar",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Gaza",
+    "Type": 2,
+    "TypeTranslation": "Operacioni"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Injekcija",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 11,
+    "Name": "Magacin",
+    "Type": 4
+  },
+  "Quantity": 6
+},{
+  "Equipment": {
+    "Name": "Sto",
+    "Type": 2,
+    "TypeTranslation": "Sobni namestaj"
+  },
+  "Room": {
+    "Id": 4,
+    "Name": "Sala za preglede 2",
+    "Type": 1
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 1,
+    "Name": "Operaciona sala 1",
+    "Type": 0
+  },
+  "Quantity": 6
+},{
+  "Equipment": {
+    "Name": "Hanzaplast",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 1,
+    "Name": "Operaciona sala 1",
+    "Type": 0
+  },
+  "Quantity": 5
+},{
+  "Equipment": {
+    "Name": "Injekcija",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 1,
+    "Name": "Operaciona sala 1",
+    "Type": 0
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Papir",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 1,
+    "Name": "Operaciona sala 1",
+    "Type": 0
+  },
+  "Quantity": 4
+},{
+  "Equipment": {
+    "Name": "Olovka",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 1,
+    "Name": "Operaciona sala 1",
+    "Type": 0
+  },
+  "Quantity": 10
+},{
+  "Equipment": {
+    "Name": "Gaza",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 2,
+    "Name": "Operaciona sala 2",
+    "Type": 0
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 2,
+    "Name": "Operaciona sala 2",
+    "Type": 0
+  },
+  "Quantity": 2
+},{
+  "Equipment": {
+    "Name": "Hanzaplast",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 2,
+    "Name": "Operaciona sala 2",
+    "Type": 0
+  },
+  "Quantity": 2
+},{
+  "Equipment": {
+    "Name": "Gaza",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 3,
+    "Name": "Sala za preglede 1",
+    "Type": 1
+  },
+  "Quantity": 10
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 3,
+    "Name": "Sala za preglede 1",
+    "Type": 1
+  },
+  "Quantity": 7
+},{
+  "Equipment": {
+    "Name": "Hanzaplast",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 3,
+    "Name": "Sala za preglede 1",
+    "Type": 1
+  },
+  "Quantity": 6
+},{
+  "Equipment": {
+    "Name": "Injekcija",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 3,
+    "Name": "Sala za preglede 1",
+    "Type": 1
+  },
+  "Quantity": 7
+},{
+  "Equipment": {
+    "Name": "Papir",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 3,
+    "Name": "Sala za preglede 1",
+    "Type": 1
+  },
+  "Quantity": 4
+},{
+  "Equipment": {
+    "Name": "Olovka",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 3,
+    "Name": "Sala za preglede 1",
+    "Type": 1
+  },
+  "Quantity": 7
+},{
+  "Equipment": {
+    "Name": "Injekcija",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 4,
+    "Name": "Sala za preglede 2",
+    "Type": 1
+  },
+  "Quantity": 2
+},{
+  "Equipment": {
+    "Name": "Hanzaplast",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 5,
+    "Name": "Sala za preglede 3",
+    "Type": 1
+  },
+  "Quantity": 7
+},{
+  "Equipment": {
+    "Name": "Injekcija",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 5,
+    "Name": "Sala za preglede 3",
+    "Type": 1
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Gaza",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 6,
+    "Name": "Sala za preglede 4",
+    "Type": 1
+  },
+  "Quantity": 2
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 6,
+    "Name": "Sala za preglede 4",
+    "Type": 1
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Papir",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 6,
+    "Name": "Sala za preglede 4",
+    "Type": 1
+  },
+  "Quantity": 2
+},{
+  "Equipment": {
+    "Name": "Gaza",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 7,
+    "Name": "Soba za smestaj bolesnika 1",
+    "Type": 2
+  },
+  "Quantity": 4
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 7,
+    "Name": "Soba za smestaj bolesnika 1",
+    "Type": 2
+  },
+  "Quantity": 5
+},{
+  "Equipment": {
+    "Name": "Olovka",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 7,
+    "Name": "Soba za smestaj bolesnika 1",
+    "Type": 2
+  },
+  "Quantity": 4
+},{
+  "Equipment": {
+    "Name": "Gaza",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 8,
+    "Name": "Soba za smestaj bolesnika 2",
+    "Type": 2
+  },
+  "Quantity": 2
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 8,
+    "Name": "Soba za smestaj bolesnika 2",
+    "Type": 2
+  },
+  "Quantity": 2
+},{
+  "Equipment": {
+    "Name": "Hanzaplast",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 8,
+    "Name": "Soba za smestaj bolesnika 2",
+    "Type": 2
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Papir",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 8,
+    "Name": "Soba za smestaj bolesnika 2",
+    "Type": 2
+  },
+  "Quantity": 4
+},{
+  "Equipment": {
+    "Name": "Olovka",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 8,
+    "Name": "Soba za smestaj bolesnika 2",
+    "Type": 2
+  },
+  "Quantity": 10
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 9,
+    "Name": "Soba za smestaj bolesnika 3",
+    "Type": 2
+  },
+  "Quantity": 10
+},{
+  "Equipment": {
+    "Name": "Hanzaplast",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 9,
+    "Name": "Soba za smestaj bolesnika 3",
+    "Type": 2
+  },
+  "Quantity": 7
+},{
+  "Equipment": {
+    "Name": "Injekcija",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 9,
+    "Name": "Soba za smestaj bolesnika 3",
+    "Type": 2
+  },
+  "Quantity": 8
+},{
+  "Equipment": {
+    "Name": "Papir",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 9,
+    "Name": "Soba za smestaj bolesnika 3",
+    "Type": 2
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Gaza",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Hanzaplast",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 7
+},{
+  "Equipment": {
+    "Name": "Injekcija",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 3
+},{
+  "Equipment": {
+    "Name": "Papir",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 5
+},{
+  "Equipment": {
+    "Name": "Olovka",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 10,
+    "Name": "Soba za smestaj bolesnika 4",
+    "Type": 2
+  },
+  "Quantity": 8
+},{
+  "Equipment": {
+    "Name": "Kopca",
+    "Type": 1,
+    "TypeTranslation": "Oprema za operacije"
+  },
+  "Room": {
+    "Id": 11,
+    "Name": "Magacin",
+    "Type": 4
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Papir",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 11,
+    "Name": "Magacin",
+    "Type": 4
+  },
+  "Quantity": 9
+},{
+  "Equipment": {
+    "Name": "Olovka",
+    "Type": 0,
+    "TypeTranslation": "Oprema za preglede"
+  },
+  "Room": {
+    "Id": 11,
+    "Name": "Magacin",
+    "Type": 4
+  },
+  "Quantity": 8
+}]

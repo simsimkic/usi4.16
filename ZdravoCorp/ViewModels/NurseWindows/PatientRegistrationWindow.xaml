@@ -1,0 +1,42 @@
+﻿<Window x:Class="ZdravoCorp.PatientRegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp"
+        mc:Ignorable="d"
+        Title="Registracija pacijenta" Height="717" Width="686" ResizeMode="NoResize">
+    <Grid Margin="0,0,-79,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="717*"/>
+            <ColumnDefinition Width="81*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Registracija pacijenta" Foreground="#34aeeb" FontSize="23" HorizontalAlignment="Left" Margin="243,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.236,0.989" Grid.Column="1"/>
+        <TextBox x:Name="ImeTextBox" HorizontalAlignment="Left" Margin="84,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="JMBGTextBox" HorizontalAlignment="Left" Margin="84,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="PrezimeTextBox" HorizontalAlignment="Left" Margin="297,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label Grid.Column="1" Content="Ime" HorizontalAlignment="Left" Margin="128,82,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Prezime" HorizontalAlignment="Left" Margin="329,82,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="JMBG" HorizontalAlignment="Left" Margin="122,163,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="BirthDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="295,189,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.Column="1" Content="Datum rođenja&#xD;&#xA;" HorizontalAlignment="Left" Margin="312,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.18,0.19" Height="29"/>
+        <Label Grid.Column="1" Content="Zdravstveni karton&#xD;&#xA;" Foreground="#34aeeb" HorizontalAlignment="Left" FontSize="18" Margin="278,353,0,0" VerticalAlignment="Top" Height="38"/>
+        <TextBox x:Name="HeightTextBox" Grid.Column="1" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Margin="502,443,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="WeightTextBox" Grid.Column="1" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Margin="502,545,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.Column="1" Content="Visina" HorizontalAlignment="Left" Margin="541,404,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Težina" HorizontalAlignment="Left" Margin="541,507,0,0" VerticalAlignment="Top"/>
+
+        <Label Grid.Column="1" Content="Istorija bolesti" HorizontalAlignment="Left" Margin="191,396,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ZavrsiButton" Grid.Column="1" Content="Završi registraciju" HorizontalAlignment="Left" Margin="306,636,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.422,0.335" Click="Button_Click" Width="128"/>
+        <TextBox x:Name="IllnessesTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="84,443,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" Height="128"/>
+        <TextBox x:Name="TelephoneTextBox" PreviewTextInput="NumberValidationTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="502,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EmailTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="484,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167"/>
+        <TextBox x:Name="AddressTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="166,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
+        <Label Grid.Column="1" Content="Broj Telefona" HorizontalAlignment="Left" Margin="523,82,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="E-mail" HorizontalAlignment="Left" Margin="543,163,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Adresa" HorizontalAlignment="Left" Margin="229,252,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PasswordTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="420,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142"/>
+        <Label Grid.Column="1" Content="Lozinka" HorizontalAlignment="Left" Margin="466,252,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
